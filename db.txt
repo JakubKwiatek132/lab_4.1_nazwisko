@@ -11,3 +11,7 @@ wazon 107
 adad 1
 sadad 23
 as 2
+Jakup 22
+xsd 32
+kubaxD 32
+jakubdzban 27

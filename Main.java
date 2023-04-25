@@ -27,11 +27,13 @@ class Main {
             String name = scanner.nextLine();
             String a = scanner.nextLine();
 
+            System.out.println("Podaj nazwisko: ");
+            String b = scanner.nextLine();
+
             System.out.println("Podaj wiek: ");
+            int c = scanner.nextInt();
 
-            int b = scanner.nextInt();
-
-            s.addStudent(new Student(a, b));
+            s.addStudent(new Student(a, b, c));
             break;
           case 2:
             System.out.println("Wyświetl liste");
