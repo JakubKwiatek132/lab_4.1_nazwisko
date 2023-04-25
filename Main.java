@@ -12,39 +12,41 @@ import java.io.IOException;
 
 class Main {
   public static void main(String[] args) {
-    
 
     try {
       Service s = new Service();
       Scanner scanner = new Scanner(System.in);
 
-   while(true){
-     System.out.println("1. dodaj 2. wyświetl");
-       int choice = scanner.nextInt();
+      while (true) {
+        System.out.println("1.dodaj 2.wyświetl");
+        int choice = scanner.nextInt();
 
-     switch (choice) {
-      case 1:
-        System.out.println("Podaj imie: ");
-        String name = scanner.nextLine();
-        String a = scanner.nextLine();1
-         
-        System.out.println("Podaj wiek: ");
-        
-        int b = scanner.nextInt();
-         
-        s.addStudent(new Student(a, b));
-      break;
-      case 2:
-        System.out.println("Wyświetl liste");
-          var students = s.getStudents();
-          for (Student current : students) {
-           System.out.println(current.ToString());
-         }
-      break;
-    }
-   }
-      
-        } catch (IOException e) {
+        switch (choice) {
+          case 1:
+            System.out.println("Podaj imie: ");
+            String name = scanner.nextLine();
+            String a = scanner.nextLine();
+
+            System.out.println("Podaj wiek: ");
+
+            int b = scanner.nextInt();
+
+            s.addStudent(new Student(a, b));
+            break;
+          case 2:
+            System.out.println("Wyświetl liste");
+            var students = s.getStudents();
+            for (Student current : students) {
+              System.out.println(current.ToString());
+            }
+            break;
+          default:
+            System.out.println("Nieprawidłowy wybor");
+            break;
+        }
+      }
+
+    } catch (IOException e) {
 
     }
   }
