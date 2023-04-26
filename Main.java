@@ -30,10 +30,13 @@ class Main {
             System.out.println("Podaj nazwisko: ");
             String b = scanner.nextLine();
 
-            System.out.println("Podaj wiek: ");
-            int c = scanner.nextInt();
+            System.out.println("Podaj ulice: ");
+            String c = scanner.nextLine();
 
-            s.addStudent(new Student(a, b, c));
+            System.out.println("Podaj wiek: ");
+            int d = scanner.nextInt();
+
+            s.addStudent(new Student(a, b, c, d));
             break;
           case 2:
             System.out.println("Wyświetl liste");
